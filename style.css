@@ -96,6 +96,8 @@ input {
   color: var(--fg);
   border-radius: 5px;
   margin-top: 1em;
+
+  border: 2px solid var(--fg);
 }
 
 button:hover {
