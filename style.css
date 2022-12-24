@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  padding: 0 2em;
+}
+/* utility classes */
+.bg-dark {
+  --bg: black;
+  --fg: white;
+}
+.bg-light {
+  --bg: white;
+  --fg: black;
+}
+.flow-space > * + * {
+  margin-top: 2rem;
+}
+
+ol[class] {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+}
+
+li {
+  padding: 15px;
+  list-style-position: inside;
+
+  border: 2px solid var(--fg);
+  border-radius: 5px;
+}
+
+span {
+  margin-left: 2em;
+}
+
+@media (max-width: 500px) {
+  span {
+    margin-left: 1em;
+    display: block;
+  }
+}
+select,
+button {
+  font-size: 1.2em;
+}
+select {
+  padding: 0.5em 1.5em;
+  border-radius: 0;
+  border-color: var(--fg);
+  background: var(--bg);
+  color: var(--fg);
+}
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0.5em 3em;
+
+  background: var(--fg);
+  color: var(--bg);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+form > div {
+  width: 30%;
+}
+
+@media (max-width: 700px) {
+  form {
+    flex-direction: column;
+  }
+  form > div {
+    width: 100%;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 1.2em;
+}
+
+input {
+  width: 100%;
+  padding: 1em;
+  background: var(--bg);
+  color: var(--fg);
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+button:hover {
+  opacity: 0.7;
+}

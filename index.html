@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Filter Example</title>
+  </head>
+  <body class="flow-space bg-dark">
+    <h2>Filter ui cards via their profession.</h2>
+    <select name="roles" id="roles-select">
+      <option value="">Profession</option>
+      <option value="admin">Admin</option>
+      <option value="developer">Developer</option>
+    </select>
+
+    <ol class="developers flow-space"></ol>
+    <ol class="admins flow-space"></ol>
+
+    <button class="filter">Filter</button>
+    <button class="toggle">Toggle Theme</button>
+
+    <p>Add a new user</p>
+    <p class="error"></p>
+    <form>
+      <div>
+        <label for="name">Enter Name</label>
+        <input type="text" id="name" />
+      </div>
+
+      <div>
+        <label for="profession">Enter Profession</label>
+        <input type="text" id="profession" />
+      </div>
+
+      <div>
+        <label for="age">Enter Age</label>
+        <input type="number" id="age" />
+      </div>
+      <button type="submit">Add User</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
